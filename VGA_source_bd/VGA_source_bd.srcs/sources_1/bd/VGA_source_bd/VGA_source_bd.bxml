@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="VGA_source_bd" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1762786207"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1762786207"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1762786207"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1762786207"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1763039594"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1763039594"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1763039594"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1763039594"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\VGA_source_bd_clk_wiz_0_0\VGA_source_bd_clk_wiz_0_0.xci" Type="IP">
         <Instance HierarchyPath="clk_wiz_0"/>
@@ -39,14 +39,6 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\VGA_source_bd_xlslice_0_0\VGA_source_bd_xlslice_0_0.xci" Type="IP">
-        <Instance HierarchyPath="xlslice_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="ip\VGA_source_bd_bit_extraction_0_0\VGA_source_bd_bit_extraction_0_0.xci" Type="IP">
         <Instance HierarchyPath="bit_extraction_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
@@ -65,8 +57,48 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\VGA_source_bd_system_ila_0_0\VGA_source_bd_system_ila_0_0.xci" Type="IP">
-        <Instance HierarchyPath="system_ila_0"/>
+      <File Name="ip\VGA_source_bd_v_vid_in_axi4s_0_0\VGA_source_bd_v_vid_in_axi4s_0_0.xci" Type="IP">
+        <Instance HierarchyPath="v_vid_in_axi4s_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\VGA_source_bd_v_tc_1_0\VGA_source_bd_v_tc_1_0.xci" Type="IP">
+        <Instance HierarchyPath="v_tc_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\VGA_source_bd_v_axi4s_vid_out_0_0\VGA_source_bd_v_axi4s_vid_out_0_0.xci" Type="IP">
+        <Instance HierarchyPath="v_axi4s_vid_out_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\VGA_source_bd_xlconstant_0_0\VGA_source_bd_xlconstant_0_0.xci" Type="IP">
+        <Instance HierarchyPath="const_VDD"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\VGA_source_bd_xlconstant_0_1\VGA_source_bd_xlconstant_0_1.xci" Type="IP">
+        <Instance HierarchyPath="const_GND"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\VGA_source_bd_proc_sys_reset_1_0\VGA_source_bd_proc_sys_reset_1_0.xci" Type="IP">
+        <Instance HierarchyPath="proc_sys_reset_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
