@@ -1,0 +1,55 @@
+Q8) à repondre dans le rapport
+13) les bandes, il y en a 16. bien marqué car on prend que les 4 bits de poids fort.le compteur est périodique donc repart à 0. jusqu'a atteindre 480 a cause du 440p.
+bandes noirs( cf voir photo du 10/11/2025 sur le telephone)car les écrans sont vieux et ils n'arrivent plus foprcement à suivre le blank
+
+14 fichier bit_extraction.vhd pour l'implémentation du composant.
+
+15) 
+state machine +photo qui sera dans le git
+##################################################
+#
+# For info on creating trigger state machines:
+#   1) In the main Vivado menu bar, select
+#      Window > Language Templates
+#   2) In the Templates window, select
+#      Debug > Trigger State Machine
+#   3) Refer to the entry 'Info' for an overview
+#      of the trigger state machine language.
+#
+# More information can be found in this document:
+#
+#   Vivado Design Suite User Guide: Programming
+#   and Debugging (UG908)
+#
+##################################################
+state my_state0:
+if (VGA_source_bd_i/system_ila_0/U0/probe2_1 ==1'bR) then 
+#vsync
+goto my_state1;
+else
+goto my_state0;
+endif
+
+state my_state1:
+if(VGA_source_bd_i/system_ila_0/U0/probe1_1 ==1'bR) then 
+#hsync
+reset_counter $counter0;
+goto count_LVAL;
+else
+goto my_state1;
+endif
+
+state count_LVAL:
+if ($counter0!=16'u150) then
+increment_counter $counter0;
+goto count_LVAL;
+else
+goto my_state2;
+endif
+state my_state2:
+trigger;
+
+ 
+
+
+
