@@ -18,7 +18,8 @@
       "v_axi4s_vid_out_0": "",
       "const_VDD": "",
       "const_GND": "",
-      "proc_sys_reset_1": ""
+      "proc_sys_reset_1": "",
+      "inverter_0": ""
     },
     "ports": {
       "reset_n": {
@@ -222,6 +223,10 @@
       "proc_sys_reset_1": {
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
         "xci_name": "VGA_source_bd_proc_sys_reset_1_0"
+      },
+      "inverter_0": {
+        "vlnv": "u-bourgogne.fr:user:inverter:1.0",
+        "xci_name": "VGA_source_bd_inverter_0_4"
       }
     },
     "interface_nets": {

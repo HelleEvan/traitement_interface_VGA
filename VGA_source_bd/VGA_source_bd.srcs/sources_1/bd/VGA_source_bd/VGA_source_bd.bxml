@@ -132,6 +132,14 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
+      <File Name="ip\VGA_source_bd_inverter_0_4\VGA_source_bd_inverter_0_4.xci" Type="IP">
+        <Instance HierarchyPath="inverter_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
     </FileCollection>
   </CompositeFile>
 </Root>
